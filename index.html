@@ -6,7 +6,6 @@
 <title>MOMENTO UP 2026 — CONAP</title>
 <meta name="description" content="Momento UP 2026: resultados, reconhecimento e o aniversário da CONAP. 13 de novembro de 2026.">
 <meta name="theme-color" content="#00124F">
-<script>if("scrollRestoration" in history)history.scrollRestoration="manual";document.documentElement.classList.add("js")</script>
 <meta property="og:title" content="Bem-vindo ao Momento UP 2026 — CONAP">
 <meta property="og:description" content="Resultados, reconhecimento e o jantar de aniversário da CONAP. 13 de novembro de 2026.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20298%20298%22%3E%3Crect%20width%3D%22298%22%20height%3D%22298%22%20rx%3D%2264%22%20fill%3D%22%2300124F%22/%3E%3Cg%20transform%3D%22translate%2842%2042%29%20scale%28.72%29%22%3E%20%3Cg%3E%20%3Cg%3E%20%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M100.85%2C229.09c8.21%2C3.3%2C16.6%2C6.19%2C25.31%2C7.95%2C84.87%2C17.09%2C160.38-54.7%2C148.86-140.12-2.59-19.19-8.77-33.35-18.15-49.9-.15-.27-.68-.78-.22-1.02%2C23.95%2C24.97%2C38.64%2C58.58%2C41%2C93.24%2C3.32%2C48.76-20.02%2C93.88-64.56%2C115.15-44.64%2C21.32-99.04%2C11.18-132.24-25.31Z%22/%3E%20%3Cpath%20fill%3D%22%23EC6326%22%20d%3D%22M196.78%2C68.26c-5.99-2.24-11.93-4.52-18.13-6.16C76.76%2C35.25-10.06%2C138.91%2C32.41%2C234.86c2.46%2C5.55%2C5.53%2C10.26%2C8.28%2C15.54.14.26.79.65.28.95-14.19-14.99-25.43-33.23-32.34-52.72C-12.06%2C140.28%2C4.14%2C75.33%2C60.72%2C45.33c45.02-23.87%2C101.62-14.39%2C136.05%2C22.94Z%22/%3E%20%3Cpath%20fill%3D%22%23EC6326%22%20d%3D%22M228.65%2C196.61c4.18-10.18%2C7.37-20.8%2C8.92-31.75C250.6%2C72.61%2C162.01-2.35%2C73.15%2C28.37c-9.45%2C3.26-16.24%2C7.45-24.88%2C11.94-.26.14-.65.79-.95.28C69.76%2C19.4%2C99.02%2C5.1%2C129.83%2C1.2c31.34-3.97%2C61.32%2C1.68%2C87.03%2C20.25%2C54.58%2C39.42%2C63.59%2C118.27%2C18.45%2C168.67-.5.56-6.36%2C6.85-6.65%2C6.49Z%22/%3E%20%3Cpath%20fill%3D%22%23EC6326%22%20d%3D%22M250.31%2C256.92c-13.99%2C13.74-31.63%2C24.65-50.05%2C31.46-54.3%2C20.06-114.9%2C7.87-147.69-41.82-30.3-45.91-23.73-108.4%2C16.72-145.83-4.18%2C9.96-7.35%2C20.41-8.92%2C31.13-14.76%2C100.68%2C89.47%2C176.76%2C180.36%2C130.46l9.59-5.42Z%22/%3E%20%3C/g%3E%20%3C/g%3E%20%3C/g%3E%3C/svg%3E">
@@ -146,14 +145,6 @@
   }
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   @media print{.hero{min-height:auto}.streak{display:none}}
-  /* ---------- Animações leves ---------- */
-  .streak{animation:sway 24s ease-in-out infinite alternate}
-  @keyframes sway{to{translate:3% 0}}
-  .js .rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-  .js .rv.in{opacity:1;transform:none}
-  .pill{transition:border-color .2s,background-color .2s,transform .2s}
-  @media (prefers-reduced-motion:reduce){.streak{animation:none}.js .rv{opacity:1;transform:none;transition:none}}
-  @media print{.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -296,24 +287,6 @@
   update();
   setInterval(function(){if(!document.hidden)update();},30000);
   document.addEventListener("visibilitychange",function(){if(!document.hidden)update();});
-})();
-</script>
-<script>
-(function(){
-  if(!location.hash)window.scrollTo(0,0);
-  window.addEventListener("pageshow",function(){if(!location.hash)window.scrollTo(0,0);});
-  var sel=[".top",".kicker",".title",".pill",".facts li",".count",".about h2",".intro",".pillars li",".program-head",".next",".period",".item",".night",".program-head"];
-  var els=[].slice.call(document.querySelectorAll(sel.join(",")));
-  var seen=[];els=els.filter(function(e){return seen.indexOf(e)<0&&seen.push(e)});
-  var hero=document.querySelector(".hero"),hi=0;
-  els.forEach(function(e){
-    e.classList.add("rv");
-    if(hero.contains(e)){e.style.setProperty("--d",(hi++*0.09).toFixed(2)+"s");}
-    else{var i=[].indexOf.call(e.parentNode.children,e);e.style.setProperty("--d",Math.min(i,4)*0.07+"s");}
-  });
-  if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});return;}
-  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}})},{threshold:.12,rootMargin:"0px 0px -4% 0px"});
-  els.forEach(function(e){io.observe(e)});
 })();
 </script>
 </body>
